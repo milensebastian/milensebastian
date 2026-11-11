@@ -1,89 +1,162 @@
-
 <div align="center">
 
-# MILEN SEBASTIAN
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:080B12,50:101B30,100:1B2F5A&height=200&section=header&text=MILEN%20SEBASTIAN&fontSize=46&fontColor=EAF2FF&fontAlignY=38&desc=Cybersecurity%20%C3%97%20Software%20Engineering&descSize=16&descAlignY=60&descColor=70AFFF&animation=fadeIn" width="100%" />
 
-### Cybersecurity Student · Developer · Builder
+<a href="https://github.com/milensebastian">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=70AFFF&center=true&vCenter=true&width=640&lines=Understand.+Build.+Experiment.+Improve.;Breaking+things+to+learn+how+they+work.;Encrypting+data.+Hiding+it+in+images.;Hand+gestures+%E2%86%92+3D+particles+in+real+time.;Peer-to-peer+collaboration+without+a+middleman." alt="Typing animation" />
+</a>
 
-Building security-focused software and exploring the intersection of technology, security, and creative engineering.
+<br/><br/>
 
-[Portfolio](https://milen.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/milensebastian/) · [GitHub](https://github.com/milensebastian)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-0B1220?style=for-the-badge&logo=vercel&logoColor=white)](https://milen.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0B1220?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/milensebastian/)
+[![GitHub](https://img.shields.io/badge/GITHUB-0B1220?style=for-the-badge&logo=github&logoColor=white)](https://github.com/milensebastian)
+![Location](https://img.shields.io/badge/KERALA%2C%20INDIA-0B1220?style=for-the-badge&logo=googlemaps&logoColor=70AFFF)
 
 </div>
 
----
+<br/>
 
-## `whoami`
+## `~/whoami`
 
-I'm a B.Tech Cyber Security undergraduate at St. Joseph's
-College of Engineering and Technology, Palai.
+```bash
+$ whoami
+milen — cybersecurity undergraduate @ SJCET Palai
 
-I enjoy building things, understanding how systems work,
-and experimenting with ideas that combine software engineering
-and cybersecurity.
+$ cat interests.txt
+cybersecurity · cryptography · software engineering
+distributed systems · computer vision
 
-- 🔐 Interested in application security and cryptography.
-- ⚙️ Building practical software projects.
-- 🧪 Exploring computer vision, networking and distributed systems.
-- 🚀 Focused on learning by building.
+$ cat philosophy.txt
+Understand. Build. Experiment. Improve.
 
----
+$ status
+● turning ideas into working software
+```
 
-## `featured_projects`
+I like knowing what's happening **beneath the surface** — how a cipher actually protects a byte, how two browsers talk without a server, how a camera frame becomes a gesture. Then I build something with it.
 
-| Project | Description | Technologies |
-|---|---|---|
-| [StegoVault](https://stegovault-two.vercel.app/) | Encryption, steganography and steganalysis platform | TypeScript, AES-256-GCM |
-| [AETHIRIA](https://aethiria-woad.vercel.app/) | Hand-gesture-controlled 3D particle visualizer | Three.js, MediaPipe, WebGL |
-| FORGE | Experimental peer-to-peer collaborative coding workspace | WebRTC, Vite, React |
-| [Portfolio](https://milen.vercel.app/) | Personal portfolio and project showcase | Web Development |
+<br/>
 
----
+## `~/projects`
 
-## `tech_stack`
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**Languages**
+### 🔐 [StegoVault](https://stegovault-two.vercel.app/)
+**Hide encrypted data inside ordinary images.**
 
-![C](https://img.shields.io/badge/C-111827?style=flat-square&logo=c)
-![Python](https://img.shields.io/badge/Python-111827?style=flat-square&logo=python)
-![JavaScript](https://img.shields.io/badge/JavaScript-111827?style=flat-square&logo=javascript)
-![TypeScript](https://img.shields.io/badge/TypeScript-111827?style=flat-square&logo=typescript)
+Payloads are encrypted with **AES-256-GCM** (keys derived via **PBKDF2**) before being embedded using **LSB steganography**. Also explores steganalysis, i.e. how hidden data gets detected.
 
-**Development**
+`AES-256-GCM` `PBKDF2` `LSB` `Steganalysis`
 
-![Node.js](https://img.shields.io/badge/Node.js-111827?style=flat-square&logo=nodedotjs)
-![React](https://img.shields.io/badge/React-111827?style=flat-square&logo=react)
-![Three.js](https://img.shields.io/badge/Three.js-111827?style=flat-square&logo=threedotjs)
-![MongoDB](https://img.shields.io/badge/MongoDB-111827?style=flat-square&logo=mongodb)
+[**↗ Live demo**](https://stegovault-two.vercel.app/)
 
-**Security & Tools**
+</td>
+<td width="50%" valign="top">
 
-![Wireshark](https://img.shields.io/badge/Wireshark-111827?style=flat-square&logo=wireshark)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-111827?style=flat-square&logo=burpsuite)
-![Nmap](https://img.shields.io/badge/Nmap-111827?style=flat-square)
-![Git](https://img.shields.io/badge/Git-111827?style=flat-square&logo=git)
-![Linux](https://img.shields.io/badge/Linux-111827?style=flat-square&logo=linux)
+### ✋ [AETHIRIA](https://aethiria-woad.vercel.app/)
+**Control a 3D particle universe with your bare hands.**
 
----
+Real-time hand tracking drives a WebGL particle system. No controllers, no clicks, just gestures through your webcam.
 
-## `github_activity`
+`MediaPipe` `Three.js` `WebGL`
+
+[**↗ Live demo**](https://aethiria-woad.vercel.app/)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔗 [FORGE](https://forge-p2p.vercel.app/)
+**A peer-to-peer collaborative coding workspace.**
+
+Code together in real time with direct browser-to-browser connections and conflict-free syncing, no central document server required.
+
+`WebRTC` `Yjs` `React`
+
+[**↗ Live demo**](https://forge-p2p.vercel.app/)
+
+</td>
+<td width="50%" valign="top">
+
+### 🌐 [Portfolio](https://milen.vercel.app/)
+**The home for everything I build.**
+
+Projects, experiments, and engineering write-ups in one place, designed and built from scratch.
+
+`Web Development` `UI Engineering`
+
+[**↗ Visit site**](https://milen.vercel.app/)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## `~/stack`
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=milensebastian&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github" width="49%" />
+**Core**
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=milensebastian&layout=compact&theme=github_dark&hide_border=true" width="49%" />
+<img src="https://skillicons.dev/icons?i=c,py,js,ts,react,nodejs,express,mongodb,threejs,git,linux&theme=dark" alt="Core stack" />
 
-<img src="https://streak-stats.demolab.com?user=milensebastian&theme=github-dark-blue&hide_border=true" width="70%" />
+**Security toolkit**
+
+![Wireshark](https://img.shields.io/badge/Wireshark-0B1220?style=for-the-badge&logo=wireshark&logoColor=1679A7)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-0B1220?style=for-the-badge&logo=burpsuite&logoColor=FF6633)
+![Nmap](https://img.shields.io/badge/Nmap-0B1220?style=for-the-badge&logoColor=white)
+![Kali](https://img.shields.io/badge/Linux-0B1220?style=for-the-badge&logo=linux&logoColor=white)
 
 </div>
 
----
+<br/>
+
+## `~/focus`
+
+| | Area | What I'm working on |
+|:-:|:--|:--|
+| 🛡️ | **Security** | Going deeper into cryptography, web security, and offensive/defensive fundamentals |
+| ⚙️ | **Engineering** | Shipping practical, well-structured projects end to end |
+| 🌐 | **Systems** | Distributed systems, networking, and peer-to-peer architectures |
+| 🧠 | **Foundations** | Problem solving, data structures, and CS fundamentals |
+
+<br/>
+
+## `~/stats`
 
 <div align="center">
 
-**BUILD · BREAK · UNDERSTAND · IMPROVE**
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=milensebastian&show_icons=true&theme=github_dark&hide_border=true&bg_color=080B12&title_color=70AFFF&icon_color=70AFFF&text_color=DCE6F5" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=milensebastian&layout=compact&theme=github_dark&hide_border=true&bg_color=080B12&title_color=70AFFF&text_color=DCE6F5" />
 
-<sub>Learning through engineering. Building with purpose.</sub>
+<img width="75%" src="https://streak-stats.demolab.com?user=milensebastian&theme=github-dark-blue&hide_border=true&background=080B12&ring=70AFFF&fire=70AFFF&currStreakLabel=70AFFF" />
+
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=milensebastian&bg_color=080B12&color=70AFFF&line=70AFFF&point=EAF2FF&area=true&area_color=1B2F5A&hide_border=true" />
+
+</div>
+
+<br/>
+
+## `~/connect`
+
+Open to collaborating on **security tooling, cryptography projects, and experimental web apps**. If you're building something interesting, say hi.
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/→_milen.vercel.app-70AFFF?style=for-the-badge&logoColor=080B12&labelColor=080B12)](https://milen.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/→_LinkedIn-70AFFF?style=for-the-badge&logoColor=080B12&labelColor=080B12)](https://www.linkedin.com/in/milensebastian/)
+
+</div>
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:080B12,50:101B30,100:1B2F5A&height=110&section=footer&text=BUILD%20WITH%20CURIOSITY.&fontSize=18&fontColor=70AFFF&fontAlignY=65" width="100%" />
+
+<sub>Learning continuously. Building intentionally.</sub>
 
 </div>
