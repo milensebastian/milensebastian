@@ -707,8 +707,8 @@ Principles: no scripts, no custom CSS, no iframes, no fake live widgets. Every i
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=milensebastian&show_icons=true&theme=github_dark&hide_border=true&bg_color=080B12&title_color=70AFFF&icon_color=70AFFF&text_color=DCE6F5" alt="GitHub statistics for milensebastian" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=milensebastian&layout=compact&theme=github_dark&hide_border=true&bg_color=080B12&title_color=70AFFF&text_color=DCE6F5" alt="Most used languages for milensebastian" />
+<img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=milensebastian&theme=github_dark" alt="GitHub statistics for milensebastian" />
+<img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=milensebastian&theme=github_dark" alt="Most used languages for milensebastian" />
 
 <br/><br/>
 
