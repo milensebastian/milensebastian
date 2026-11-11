@@ -1,0 +1,46 @@
+name: Generate contribution snake
+
+# Runs once a day, on demand, and when this workflow file itself changes
+# (so the very first commit generates the animation straight away).
+# It deliberately does NOT run on every push, to avoid wasted runs.
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snake.yml"
+
+# Needed so the job can push the generated files to the `output` branch.
+permissions:
+  contents: write
+
+# If two runs overlap, keep only the newest one.
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # 1) Build the SVGs from the real contribution data of the repo owner.
+      #    Query strings after "?" customise the colours of each file.
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake-dark.svg?color_snake=#70AFFF&color_dots=#111824,#1B3A6B,#2F63B8,#4D8DFF,#A8D0FF&color_dot_border=#26364D
+            dist/github-snake.svg?color_snake=#2B5FC7&color_dots=#EBEDF0,#C0D9FF,#8DBDFF,#4D8DFF,#2B5FC7&color_dot_border=#D0D7DE
+
+      # 2) Publish the files to a dedicated `output` branch (never to main).
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
