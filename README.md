@@ -4,7 +4,7 @@
   Repository: github.com/milensebastian/milensebastian
   ======================================================================
 
-  DESIGN TOKENS (used by every service below)
+  DESIGN TOKENS (shared by every asset)
     background      #080B12      card            #111824
     secondary bg    #101B30      elevated        #151E2D
     primary blue    #70AFFF      secondary blue  #4D8DFF
@@ -12,51 +12,59 @@
     text            #EAF2FF      text (soft)     #A6B2C5
     text (muted)    #77869D
 
-  EXTERNAL SERVICES AND WHAT THEIR PARAMETERS DO
-    capsule-render.vercel.app
-      type=waving            wave-shaped banner (section=header / footer)
-      color=0:..,50:..,100:..  three-stop navy gradient
-      animation=fadeIn       text fades in on load
-      fontAlignY / descAlignY  vertical position of title / subtitle
-    readme-typing-svg.demolab.com
-      lines=a;b;c            rotating phrases, "+" = space, ";" = separator
-      duration / pause       ms to type a line / ms to hold it
-      width / height         canvas size, wide enough to avoid clipping
-      center / vCenter       horizontal / vertical centring
-    img.shields.io           static badges, one consistent style
-    skillicons.dev           icon strips, theme=dark
-    github-readme-stats      exactly two cards: stats + top languages
-    Platane/snk              contribution snake, built by a workflow in
-                             .github/workflows/snake.yml and published to
-                             the `output` branch
+  LOCAL ANIMATED SVGs (assets/) · SMIL animation only: no JS, no CSS
+    hero.svg               header: drifting grid, network, scan beam, name
+    divider.svg            standard divider: signal rail, pulse, 5 nodes
+    divider-section.svg    alternate divider: centre node, rings, packets
+    focus-map.svg          MILEN at the centre of five focus areas
+    network-animation.svg  reusable mesh illustration (used in notes)
+    footer.svg             waves, particles, scan beam, closing line
 
-  LOCAL FILES
-    assets/divider.svg       animated section divider
-    assets/focus-map.svg     animated focus map
+  MOTION SYSTEM (why the assets feel connected)
+    - one 8 s master cycle; 4 s and 2 s loops divide it evenly
+    - the scan beam sweeps for 75 % of the cycle, then rests
+    - hero, footer and dividers reuse the same beam / pulse rhythm
+    - the same motif everywhere: grid, node, travelling signal packet
+    - every static state is readable even if animation is not supported
+
+  EXTERNAL SERVICES
+    readme-typing-svg.demolab.com   rotating tagline (JetBrains Mono)
+    img.shields.io                  social + demo badges
+    skillicons.dev                  icon strips
+    github-readme-stats             exactly two cards: stats + languages
+    Platane/snk                     contribution snake, produced by
+                                    .github/workflows/snake.yml and
+                                    published to the `output` branch
 
   RULES THIS FILE FOLLOWS
-    - no JavaScript, no custom CSS, no iframes (GitHub strips them anyway)
-    - every image has alt text, so the page still reads if a service is down
+    - no JavaScript, no custom CSS, no iframes
+    - every image has alt text
     - projects live in the pinned repositories, not duplicated here
     - no invented metrics, no proficiency percentages
 -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:080B12,50:101B30,100:1B2F5A&height=220&section=header&text=MILEN%20SEBASTIAN&fontSize=48&fontColor=EAF2FF&fontAlignY=36&desc=CYBERSECURITY%20%C3%97%20SOFTWARE%20ENGINEERING&descSize=16&descAlignY=58&descColor=70AFFF&animation=fadeIn" width="100%" alt="Milen Sebastian: Cybersecurity × Software Engineering" />
+<img src="./assets/hero.svg" width="100%" alt="Milen Sebastian: Cybersecurity × Software Engineering. B.Tech Cyber Security, SJCET Palai." />
 
 <a href="https://github.com/milensebastian">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=1000&color=70AFFF&center=true&vCenter=true&width=720&height=40&lines=Understand.+Build.+Experiment.+Improve.;Breaking+things+to+learn+how+they+work.;Encrypting+data.+Hiding+it+in+images.;Hand+gestures+%E2%86%92+3D+particles+in+real+time.;Peer-to-peer+collaboration+without+a+middleman.;Building+software+with+curiosity.;Exploring+security+beneath+the+surface." alt="Rotating tagline: Understand. Build. Experiment. Improve." />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=1000&color=70AFFF&center=true&vCenter=true&width=720&height=40&lines=Understand.+Build.+Experiment.+Improve.;Breaking+things+to+understand+them.;Exploring+security+beneath+the+surface.;Turning+ideas+into+working+software.;Engineering+beyond+the+obvious." alt="Rotating tagline: Understand. Build. Experiment. Improve." />
 </a>
 
 <sub>Cybersecurity undergraduate · Software developer · Experimental engineer</sub>
 
 <br/><br/>
 
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-111824?style=for-the-badge&logo=vercel&logoColor=70AFFF)](https://milen.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-111824?style=for-the-badge&logo=linkedin&logoColor=70AFFF)](https://www.linkedin.com/in/milensebastian/)
 [![GitHub](https://img.shields.io/badge/GITHUB-111824?style=for-the-badge&logo=github&logoColor=70AFFF)](https://github.com/milensebastian)
 ![Location](https://img.shields.io/badge/KERALA%2C%20INDIA-111824?style=for-the-badge&logo=googlemaps&logoColor=70AFFF)
+
+<sub><b>▸ LIVE DEMOS</b></sub>
+
+<a href="https://stegovault-two.vercel.app/"><img src="https://img.shields.io/badge/STEGOVAULT-LIVE%20DEMO-4D8DFF?style=flat-square&labelColor=111824&logo=vercel&logoColor=70AFFF" alt="StegoVault live demo" /></a>
+<a href="https://aethiria-woad.vercel.app/"><img src="https://img.shields.io/badge/AETHIRIA-LIVE%20DEMO-4D8DFF?style=flat-square&labelColor=111824&logo=vercel&logoColor=70AFFF" alt="AETHIRIA live demo" /></a>
+<a href="https://forge-p2p.vercel.app/"><img src="https://img.shields.io/badge/FORGE-LIVE%20DEMO-4D8DFF?style=flat-square&labelColor=111824&logo=vercel&logoColor=70AFFF" alt="FORGE live demo" /></a>
+<a href="https://milen.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-VISIT-4D8DFF?style=flat-square&labelColor=111824&logo=vercel&logoColor=70AFFF" alt="Portfolio website" /></a>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
@@ -103,11 +111,12 @@ I'm still a student and I'm still learning. I'd rather show what I built than cl
 
 | | Area | Exploring |
 |:-:|:--|:--|
-| `01` | **Security Engineering** | Cryptography, web security, security fundamentals |
-| `02` | **Software Engineering** | Practical applications, cleaner architecture |
-| `03` | **Distributed Systems** | Networking, peer-to-peer communication, collaborative state |
-| `04` | **Computer Vision** | Gesture recognition, interactive visual experiences |
-| `05` | **CS Foundations** | Problem solving, data structures, algorithms |
+| `01` | **Cybersecurity** | Web security, security fundamentals, how attacks and defences work |
+| `02` | **Cryptography** | Authenticated encryption, key derivation, how real mistakes get exploited |
+| `03` | **Software Engineering** | Practical applications, cleaner architecture |
+| `04` | **Distributed Systems** | Networking, peer-to-peer communication, collaborative state |
+| `05` | **Computer Vision** | Gesture recognition, interactive visual experiences |
+| `06` | **CS Foundations** | Problem solving, data structures, algorithms. This one sits underneath all the others |
 
 <div align="center">
 <img src="./assets/divider.svg" width="100%" alt="" />
@@ -128,7 +137,7 @@ I'm still a student and I'm still learning. I'd rather show what I built than cl
 <sub>Everything listed is something I have actually used. I'm still learning all of it, so no bars, percentages, or expert claims.</sub>
 
 <div align="center">
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider-section.svg" width="100%" alt="" />
 </div>
 
 ## `~/notes`
@@ -228,6 +237,10 @@ The honest summary: steganography is a fun and instructive way to learn about da
 <br/>
 
 "Peer-to-peer" does not mean "no servers". Browsers can send data directly to each other over WebRTC, but they first need help finding and reaching one another.
+
+<div align="center">
+<img src="./assets/network-animation.svg" width="80%" alt="Animated mesh network: nine peers connected by links, with signal packets travelling between them." />
+</div>
 
 ```mermaid
 sequenceDiagram
@@ -653,9 +666,14 @@ This profile uses images from external services (banner, typing tagline, badges,
 - **Development:** React, Node.js, Express, MongoDB, Three.js, Git
 - **Security and systems:** Wireshark, Burp Suite, Nmap, Linux
 - **Philosophy:** Understand. Build. Experiment. Improve.
+- **StegoVault demo:** https://stegovault-two.vercel.app/
+- **AETHIRIA demo:** https://aethiria-woad.vercel.app/
+- **FORGE demo:** https://forge-p2p.vercel.app/
 - **Portfolio:** https://milen.vercel.app/
 - **LinkedIn:** https://www.linkedin.com/in/milensebastian/
 - **GitHub:** https://github.com/milensebastian
+
+Motion: the animated graphics loop slowly and are purely decorative. Nothing on this page is communicated only through movement.
 
 Design choices for readability: high-contrast text on a dark background, meaningful alt text on every image, no information that exists only inside an image, and collapsible sections for secondary material.
 
@@ -668,20 +686,21 @@ Design choices for readability: high-contrast text on a dark background, meaning
 
 | Service | Used for | If it is down |
 |:--|:--|:--|
-| [Capsule Render](https://github.com/kyechan99/capsule-render) | Header and footer banners | The text tagline and alt text remain |
 | [Readme Typing SVG](https://github.com/DenverCoder1/readme-typing-svg) | Rotating tagline | A static tagline line sits below it |
-| [Shields.io](https://shields.io/) | Social and tool badges | Alt text names each link |
+| [Shields.io](https://shields.io/) | Social and demo badges | Alt text names each link, and plain links are listed in note 15 |
 | [skillicons.dev](https://skillicons.dev/) | Language and tool icons | Names are printed under the icons |
 | [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats) | Stats and top-languages cards | The rest of the page is unaffected |
 | [Platane/snk](https://github.com/Platane/snk) | Contribution snake | Appears only after the workflow has run |
-| Local SVGs in `assets/` | Divider and focus map | Hosted in this repository, no third party |
+| Six local SVGs in `assets/` | Hero, two dividers, focus map, network illustration, footer | Hosted in this repository, no third party. Static layout stays readable if animation is unsupported |
+
+Motion design: one shared 8-second cycle drives the scan beam, signal pulses and node highlights across the hero, dividers and footer, so the page moves as one system. The animations are SVG-native (SMIL), with no scripts and no CSS.
 
 Principles: no scripts, no custom CSS, no iframes, no fake live widgets. Every image carries alt text, and nothing important is communicated only by an animation.
 
 </details>
 
 <div align="center">
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider-section.svg" width="100%" alt="" />
 </div>
 
 ## `~/github`
@@ -724,8 +743,6 @@ Open to collaborating on security tooling, cryptography projects, distributed sy
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:080B12,50:101B30,100:1B2F5A&height=130&section=footer&text=BUILD%20WITH%20CURIOSITY.&fontSize=22&fontColor=70AFFF&fontAlignY=62&animation=fadeIn" width="100%" alt="Build with curiosity." />
-
-<sub>Learning continuously. Building intentionally.</sub>
+<img src="./assets/footer.svg" width="100%" alt="Build with curiosity. Learning continuously. Building intentionally." />
 
 </div>
